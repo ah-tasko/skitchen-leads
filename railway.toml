@@ -1,0 +1,9 @@
+# railway.toml — конфігурація Railway
+# Запуск кожного дня о 9:00 ранку (Dubai timezone = UTC+4)
+# Тобто 05:00 UTC
+
+[deploy]
+startCommand = "python main.py"
+
+[cron]
+schedule = "0 5 * * *"
